@@ -16,7 +16,7 @@
         <ul class="poke-list">
             <li v-for="item in pokemonList" class="poke-list-item">
                 <img :src="'//serebii.net/pokedex-xy/icon/'+item.number+'.png'">
-                <span>{{item.number}} - {{item.name}}</span>
+                <span>{{item.number | pokeNumber}} - {{item.name}}</span>
             </li>
         </ul>
     </div>
