@@ -11,7 +11,14 @@
 <body>
     
     <div id="app">
-        
+        <img src="./assets/image/pokeball.svg" class="pokeball-back" >
+        <input type="text" id="pokeFilter" placeholder="Search" maxlength="20">
+        <ul class="poke-list">
+            <li v-for="item in pokemonList" class="poke-list-item">
+                <img :src="'//serebii.net/pokedex-xy/icon/'+item.number+'.png'">
+                <span>{{item.number}} - {{item.name}}</span>
+            </li>
+        </ul>
     </div>
 
     <script src="https://unpkg.com/vue/dist/vue.js" ></script>
