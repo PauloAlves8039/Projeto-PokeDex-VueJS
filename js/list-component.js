@@ -1,7 +1,7 @@
 /*
  * Arquivo: list-component.js
  * Autor: Paulo Alves
- * Descrição: responsável pela criação de um coponente para uso de item de lista
+ * Descrição: responsável pela criação de um componente para exibição de Pokemons em uma lista  
  * Data: 30/01/2020
 */
 
