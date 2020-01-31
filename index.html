@@ -14,7 +14,7 @@
         <img src="./assets/image/pokeball.svg" class="pokeball-back" >
         <input type="text" id="pokeFilter" placeholder="Search" maxlength="20">
         <ul class="poke-list">
-            <my-list v-for="item in pokemonList" :pokemon="item" :key="item.number"></my-list>
+            <my-list v-for="item in pokeList" :pokemon="item" :key="item.number"></my-list>
         </ul>
     </div>
 
@@ -22,5 +22,6 @@
     <script src="./js/list-component.js"></script>
     <script src="./js/filters.js"></script>
     <script src='./js/app.js'></script>
+    
 </body>
 </html>

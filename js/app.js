@@ -12,9 +12,16 @@ const app = new Vue({
             {name: 'charizard', number: 6},
             {name: 'squirtle', number: 7},
             {name: 'pikachu', number: 25},
-            {name: 'Celebi', number: 251},
-            {name: 'Lucario', number: 448},
-            {name: 'Delphox', number: 655}
-        ]
-    }
+            {name: 'celebi', number: 251},
+            {name: 'lucario', number: 448},
+            {name: 'delphox', number: 655}
+        ],
+        nameFilter: ''
+    },
+    computed: {
+        pokeList: function(){
+            let nameFilter = this.nameFilter.toLowerCase()
+            return this.pokemonList.filter(pokemon => pokemon.name.includes(nameFilter))
+        }
+    },
 })
