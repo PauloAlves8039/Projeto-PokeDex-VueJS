@@ -8,7 +8,7 @@
 Vue.component('my-list', {
     template: `
     <li class="poke-list-item">
-        <img :src="'//serebii.net/pokedex-xy/icon/'+pokemon.number+'.png'">
+        <img :src="'//serebii.net/pokedex-xy/icon/'+pokemon.number.toString().padStart(3, '0')+'.png'">
         <span>{{pokemon.number | pokeNumber}} - {{pokemon.name}}</span>
     </li>
     `,
