@@ -7,7 +7,7 @@
 
 let PokeService = {
     API: {
-        url: 'https://dev.treinaweb.com.br/pokeapi/pokedex/1',
+        url: 'https://dev.treinaweb.com.br/pokeapi/',
         get: (url) => {
             return fetch(`${PokeService.API.url}${url}`)
                 .then(response => response.json())
