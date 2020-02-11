@@ -14,8 +14,7 @@ const myRouter = new VueRouter({routes})
 
 myRouter.beforeEach((to, from, next) => {
     if (to.path !== '/') {
-        var pkmNumber = to.path.slice(1)
-
+        let pkmNumber = to.path.slice(1)
         if (!pkmNumber.match(/\D/g)) {
             next();
         } else {
