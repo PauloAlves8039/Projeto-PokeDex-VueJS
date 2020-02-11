@@ -7,6 +7,7 @@
 
 Vue.component('my-list', {
     template: `
+    <router-link :to="number"><router-link>
     <li class="poke-list-item">
         <img :src="sprite">
         <span>{{pokemon.number | pokeNumber}} - {{pokemon.name}}</span>
