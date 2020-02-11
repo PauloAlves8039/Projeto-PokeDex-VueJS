@@ -7,6 +7,7 @@
 
 const app = new Vue({
     el: '#app',
+    router: myRouter,
     data: {
         pokemonList: [],
         nameFilter: ''
