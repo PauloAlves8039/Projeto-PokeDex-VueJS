@@ -14,7 +14,7 @@ Repositório de uma aplicação web para simular uma PokéDex desenvolvida com V
 - Javascript
 - VueJS v2.9.6
 
-## Screenshot
+## :camera: Screenshot
 ![screenshot](https://github.com/PauloAlves8039/Projeto-PokeDex-VueJS/blob/master/assets/image/screenshot.png)
 
 ## Author
